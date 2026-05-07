@@ -1,0 +1,574 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="description" content="Base Camp Code — hands-on coding camps for young people south of the river Perth. micro:bit, robotics, web development and more."/>
+  <title>Base Camp Code — Start at base camp. Code to the summit.</title>
+
+  <!-- Google Fonts: Roboto -->
+  <link rel="preconnect" href="https://fonts.googleapis.com"/>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet"/>
+
+  <link rel="stylesheet" href="css/styles.css"/>
+</head>
+<body>
+
+  <!-- ══════════════════════════════════════
+       NAV
+       ══════════════════════════════════════ -->
+  <nav class="nav" role="navigation" aria-label="Main navigation">
+    <div class="container">
+      <div class="nav__inner">
+        <a href="#home" class="nav__logo" aria-label="Base Camp Code home">
+          <img src="assets/images/BaseCampCodeLogo.png" alt="Base Camp Code logo"/>
+          <div class="nav__logo-text">
+            Base Camp Code
+            <div class="nav__logo-sub">Perth · South of the River</div>
+          </div>
+        </a>
+        <ul class="nav__links" role="list">
+          <li><a href="#about">About</a></li>
+          <li><a href="#programme">Programme</a></li>
+          <li><a href="#included">What's Included</a></li>
+          <li><a href="#roadmap">Future Camps</a></li>
+          <li><a href="#location">Location</a></li>
+          <li><a href="#register" class="btn btn--primary btn--cta nav__cta">Register Interest</a></li>
+        </ul>
+        <button class="nav__hamburger" aria-label="Toggle mobile menu" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+      <div class="nav__mobile" role="menu">
+        <a href="#about">About</a>
+        <a href="#programme">Programme</a>
+        <a href="#included">What's Included</a>
+        <a href="#roadmap">Future Camps</a>
+        <a href="#location">Location</a>
+        <a href="#register">Register Interest</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- ══════════════════════════════════════
+       HERO
+       ══════════════════════════════════════ -->
+  <section class="hero" id="home" aria-label="Hero">
+    <div class="hero__bg">
+      <div class="hero__dots"></div>
+      <div class="hero__glow"></div>
+      <svg class="hero__terrain" viewBox="0 0 1440 320" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none" aria-hidden="true">
+        <path d="M0,320 L0,220 L80,180 L160,210 L280,120 L400,160 L520,60 L600,100 L720,20 L840,80 L920,30 L1040,110 L1160,70 L1280,140 L1360,100 L1440,160 L1440,320 Z" fill="#1D9E75"/>
+        <path d="M0,320 L0,260 L120,230 L240,260 L360,190 L480,220 L600,150 L700,180 L820,120 L940,160 L1060,130 L1180,170 L1300,140 L1440,200 L1440,320 Z" fill="#085041"/>
+      </svg>
+    </div>
+    <div class="container">
+      <div class="hero__content">
+        <div class="hero__logo reveal">
+          <img src="assets/images/BaseCampCodeLogo.png" alt="Base Camp Code"/>
+          <div class="hero__logo-text">
+            <h1>Base Camp Code</h1>
+            <p>Perth · South of the River · Est. 2026</p>
+          </div>
+        </div>
+        <h2 class="hero__tagline reveal reveal-delay-1">
+          Start at base camp.<br/>
+          <span>Code to the summit.</span>
+        </h2>
+        <p class="hero__desc reveal reveal-delay-2">
+          Hands-on holiday coding camps for young people in Rockingham, Kwinana and the
+          south-of-the-river Perth corridor. micro:bit robots, real projects, real skills —
+          and you keep the hardware.
+        </p>
+        <div class="hero__actions reveal reveal-delay-3">
+          <a href="#register" class="btn btn--primary">Register Your Interest ↓</a>
+          <a href="#programme" class="btn btn--outline">See the Programme</a>
+        </div>
+        <div class="hero__badges reveal reveal-delay-4">
+          <div class="hero__badge">
+            <div class="hero__badge-icon">🤖</div>
+            <span>micro:bit + Maqueen Robots</span>
+          </div>
+          <div class="hero__badge">
+            <div class="hero__badge-icon">🎒</div>
+            <span>Keep your micro:bit</span>
+          </div>
+          <div class="hero__badge">
+            <div class="hero__badge-icon">👩‍🏫</div>
+            <span>Teacher-led, max 10 students</span>
+          </div>
+          <div class="hero__badge">
+            <div class="hero__badge-icon">📍</div>
+            <span>South of the River, Perth WA</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════════════
+       MISSION STRIP
+       ══════════════════════════════════════ -->
+  <div class="mission" role="region" aria-label="Mission statement">
+    <div class="container">
+      <p class="mission__text">
+        <em>Our mission:</em> To give every young person south of the river access to hands-on technology education —
+        building the confidence, creativity and computational thinking they need to shape their own future.
+      </p>
+    </div>
+  </div>
+
+  <!-- ══════════════════════════════════════
+       ABOUT
+       ══════════════════════════════════════ -->
+  <section class="section about" id="about" aria-label="About Base Camp Code">
+    <div class="container">
+      <div class="about__grid">
+
+        <div class="about__visual reveal">
+          <!-- Pyramid SVG illustration -->
+          <svg class="about__pyramid" viewBox="0 0 320 240" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+            <!-- Level 4 — peak -->
+            <rect x="136" y="32" width="48" height="36" rx="5" fill="#085041"/>
+            <!-- Cursor in peak block -->
+            <rect x="154" y="40" width="4" height="20" rx="2" fill="#EF9F27" opacity="0.9"/>
+            <!-- Level 3 -->
+            <rect x="112" y="72" width="96" height="36" rx="5" fill="#0F6E56"/>
+            <!-- code stripes -->
+            <rect x="120" y="83" width="30" height="3" rx="1" fill="white" opacity="0.35"/>
+            <rect x="120" y="92" width="54" height="3" rx="1" fill="white" opacity="0.35"/>
+            <!-- Level 2 -->
+            <rect x="88" y="112" width="144" height="36" rx="5" fill="#1D9E75"/>
+            <rect x="98" y="123" width="40" height="3" rx="1" fill="white" opacity="0.35"/>
+            <rect x="98" y="132" width="78" height="3" rx="1" fill="white" opacity="0.35"/>
+            <!-- Level 1 — base -->
+            <rect x="64" y="152" width="192" height="38" rx="5" fill="#5DCAA5"/>
+            <rect x="76" y="163" width="50" height="3" rx="1" fill="white" opacity="0.35"/>
+            <rect x="76" y="172" width="110" height="3" rx="1" fill="white" opacity="0.35"/>
+            <!-- Flag pole -->
+            <line x1="160" y1="32" x2="160" y2="8" stroke="#5F5E5A" stroke-width="2.5" stroke-linecap="round"/>
+            <!-- Flag -->
+            <polygon points="160,8 188,16 160,24" fill="#EF9F27"/>
+            <!-- Brace left trace -->
+            <path d="M136,32 L136,72 L112,72 L112,112 L88,112 L88,152 L64,152 L64,190" fill="none" stroke="#EF9F27" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" opacity="0.5"/>
+            <!-- Brace right trace -->
+            <path d="M184,32 L184,72 L208,72 L208,112 L232,112 L232,152 L256,152 L256,190" fill="none" stroke="#EF9F27" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" opacity="0.5"/>
+            <!-- Circuit nodes -->
+            <circle cx="136" cy="72"  r="5" fill="#EF9F27"/>
+            <circle cx="112" cy="112" r="5" fill="#EF9F27"/>
+            <circle cx="88"  cy="152" r="5" fill="#EF9F27"/>
+            <circle cx="184" cy="72"  r="5" fill="#EF9F27"/>
+            <circle cx="208" cy="112" r="5" fill="#EF9F27"/>
+            <circle cx="232" cy="152" r="5" fill="#EF9F27"/>
+            <!-- Ground line -->
+            <line x1="40" y1="195" x2="280" y2="195" stroke="#D3D1C7" stroke-width="1.5" stroke-linecap="round"/>
+            <!-- { } labels -->
+            <text x="24" y="130" font-family="monospace" font-size="28" font-weight="700" fill="#EF9F27" opacity="0.6">{</text>
+            <text x="278" y="130" font-family="monospace" font-size="28" font-weight="700" fill="#EF9F27" opacity="0.6">}</text>
+          </svg>
+          <div class="about__stat-cards">
+            <div class="stat-card">
+              <div class="stat-card__num" data-count="3" data-suffix=" days">0 days</div>
+              <div class="stat-card__label">per camp</div>
+            </div>
+            <div class="stat-card">
+              <div class="stat-card__num" data-count="10" data-suffix=" max">0 max</div>
+              <div class="stat-card__label">students per cohort</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="about__copy reveal reveal-delay-1">
+          <span class="tag">South of the River</span>
+          <h2>Quality STEM shouldn't require a 45-minute drive north</h2>
+          <p>
+            The corridor from Fremantle to Mandurah is home to thousands of families — and almost zero
+            quality holiday coding programmes. Base Camp Code was built to fix that.
+          </p>
+          <p>
+            We run small, teacher-led camps where students actually build things: robots that avoid obstacles,
+            games played between two micro:bits, autonomous navigation challenges. Real projects with real outcomes.
+          </p>
+          <div class="about__points">
+            <div class="about__point">
+              <div class="about__point-dot"></div>
+              <p><strong>Kwinana and Rockingham</strong> to start, expanding south toward Mandurah as we grow.</p>
+            </div>
+            <div class="about__point">
+              <div class="about__point-dot"></div>
+              <p><strong>Years 5–9</strong> welcome — complete beginners to confident block-coders, all catered for.</p>
+            </div>
+            <div class="about__point">
+              <div class="about__point-dot"></div>
+              <p><strong>July school holidays 2026</strong> — two identical cohorts, Week 1 and Week 2.</p>
+            </div>
+          </div>
+          <a href="#register" class="btn btn--teal">Secure a spot →</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════════════
+       PROGRAMME
+       ══════════════════════════════════════ -->
+  <section class="section section--alt" id="programme" aria-label="3-day camp programme">
+    <div class="container">
+      <div class="programme__intro reveal">
+        <span class="tag">The 3-Day Programme</span>
+        <h2>From zero to robot in three days</h2>
+        <p>A progressive arc from standalone micro:bit programming all the way to autonomous robot navigation — finishing with a parent showcase your kids will want to show off.</p>
+      </div>
+      <div class="days">
+
+        <!-- Day 1 -->
+        <article class="day-card reveal" aria-label="Day 1">
+          <div class="day-card__header">
+            <div class="day-card__num">Day 01</div>
+            <h3 class="day-card__title">The "Brain" of the Robot</h3>
+            <div class="day-card__emoji" aria-hidden="true">🧠</div>
+          </div>
+          <div class="day-card__body">
+            <div class="day-card__sessions">
+              <div class="session">
+                <div class="session__time">Morning</div>
+                <div class="session__name">Setup &amp; Visual Logic</div>
+                <div class="session__desc">Icebreakers, MakeCode introduction, LED matrix and button interactions.</div>
+              </div>
+              <div class="session">
+                <div class="session__time">Middle</div>
+                <div class="session__name">Inputs &amp; Outputs</div>
+                <div class="session__desc">Accelerometer step counter, shake-triggered mood badge, bridge to game logic.</div>
+              </div>
+              <div class="session">
+                <div class="session__time">Afternoon</div>
+                <div class="session__name">Game Logic + Tournament</div>
+                <div class="session__desc">Rock Paper Scissors using loops, variables and conditionals — then a whole-class tournament to close the day.</div>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <!-- Day 2 -->
+        <article class="day-card reveal reveal-delay-1" aria-label="Day 2">
+          <div class="day-card__header">
+            <div class="day-card__num">Day 02</div>
+            <h3 class="day-card__title">Brain Meets Body</h3>
+            <div class="day-card__emoji" aria-hidden="true">🤖</div>
+          </div>
+          <div class="day-card__body">
+            <div class="day-card__sessions">
+              <div class="session">
+                <div class="session__time">Morning</div>
+                <div class="session__name">Basic Locomotion</div>
+                <div class="session__desc">Plug the micro:bit into the Maqueen robot. Move, turn, and debug motor calibration.</div>
+              </div>
+              <div class="session">
+                <div class="session__time">Middle</div>
+                <div class="session__name">Sensing the World</div>
+                <div class="session__desc">Ultrasonic obstacle avoidance, infrared cliff detection — real autonomous behaviour.</div>
+              </div>
+              <div class="session">
+                <div class="session__time">Afternoon</div>
+                <div class="session__name">Sound &amp; Light Show</div>
+                <div class="session__desc">Control RGB LEDs and the buzzer. Students program their robot to dance or perform.</div>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <!-- Day 3 -->
+        <article class="day-card reveal reveal-delay-2" aria-label="Day 3">
+          <div class="day-card__header">
+            <div class="day-card__num">Day 03</div>
+            <h3 class="day-card__title">Grand Prix &amp; Showcase</h3>
+            <div class="day-card__emoji" aria-hidden="true">🏁</div>
+          </div>
+          <div class="day-card__body">
+            <div class="day-card__sessions">
+              <div class="session">
+                <div class="session__time">Morning</div>
+                <div class="session__name">Line Following</div>
+                <div class="session__desc">If-Then-Else logic powers the Maqueen to follow a black-tape track autonomously.</div>
+              </div>
+              <div class="session">
+                <div class="session__time">Middle</div>
+                <div class="session__name">Grand Prix Challenge</div>
+                <div class="session__desc">Teams design a course and program their robot to navigate it — iteration, teamwork, debugging under pressure.</div>
+              </div>
+              <div class="session">
+                <div class="session__time">Afternoon</div>
+                <div class="session__name">Parent Showcase 🎓</div>
+                <div class="session__desc">Parents invited in for a live demo. Certificates presented. Students take home their micro:bit.</div>
+              </div>
+            </div>
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════════════
+       VALUES
+       ══════════════════════════════════════ -->
+  <section class="section section--dark" aria-label="Our values">
+    <div class="container">
+      <div class="values__intro reveal">
+        <span class="tag">What We Stand For</span>
+        <h2>Our values</h2>
+        <p style="color:rgba(255,255,255,0.7)">Everything we do — the programme design, the pricing, the way we talk to parents — is rooted in five values.</p>
+      </div>
+      <div class="values__grid">
+        <div class="value-card reveal">
+          <div class="value-card__icon">📍</div>
+          <div class="value-card__title">Accessible</div>
+          <p class="value-card__desc">Quality STEM education shouldn't require a drive north. We bring it to the communities that need it most.</p>
+        </div>
+        <div class="value-card reveal reveal-delay-1">
+          <div class="value-card__icon">🔧</div>
+          <div class="value-card__title">Hands-on</div>
+          <p class="value-card__desc">Students build, break, debug and rebuild. Learning happens through doing — not watching someone else do it.</p>
+        </div>
+        <div class="value-card reveal reveal-delay-2">
+          <div class="value-card__icon">📈</div>
+          <div class="value-card__title">Progressive</div>
+          <p class="value-card__desc">Every camp is a stepping stone. There is always a next level — in our programme, and in life.</p>
+        </div>
+        <div class="value-card reveal reveal-delay-3">
+          <div class="value-card__icon">👩‍🏫</div>
+          <div class="value-card__title">Teacher-led</div>
+          <p class="value-card__desc">Real curriculum expertise, not a script. Every session is designed and delivered by someone who understands how young people learn.</p>
+        </div>
+        <div class="value-card reveal reveal-delay-4">
+          <div class="value-card__icon">🎒</div>
+          <div class="value-card__title">Ownership</div>
+          <p class="value-card__desc">Students leave with something real — a device, a skill, and a sense of what they are genuinely capable of building.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════════════
+       WHAT'S INCLUDED
+       ══════════════════════════════════════ -->
+  <section class="section" id="included" aria-label="What's included">
+    <div class="container">
+      <div class="included__grid">
+        <div class="reveal">
+          <span class="tag">What's Included</span>
+          <h2>Everything your child needs — including the robot</h2>
+          <div class="included__list">
+            <div class="included__item">
+              <div class="included__icon">💻</div>
+              <div class="included__info">
+                <h4>All equipment provided</h4>
+                <p>Laptops, cables, cables, track materials and all consumables. Just bring yourself.</p>
+              </div>
+            </div>
+            <div class="included__item">
+              <div class="included__icon">🍱</div>
+              <div class="included__info">
+                <h4>Daily parent email update</h4>
+                <p>Photos, a short summary of the day's wins, and a teaser for tomorrow — so parents feel part of the journey.</p>
+              </div>
+            </div>
+            <div class="included__item">
+              <div class="included__icon">🏆</div>
+              <div class="included__info">
+                <h4>Certificate of completion</h4>
+                <p>Presented at the Day 3 showcase — a real moment of celebration in front of family.</p>
+              </div>
+            </div>
+            <div class="included__item">
+              <div class="included__icon">👨‍👩‍👧</div>
+              <div class="included__info">
+                <h4>Parent showcase on Day 3</h4>
+                <p>Parents are invited in for the Grand Prix finale — your child explains and demonstrates their robot live.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="reveal reveal-delay-2">
+          <div class="included__highlight">
+            <div class="included__highlight-icon">🤖</div>
+            <h3>They keep the micro:bit</h3>
+            <p>
+              Every student leaves camp with their own BBC micro:bit V2 to take home.
+              It's theirs to keep — to experiment, to build, to show off.
+              This is the single biggest differentiator from every other camp out there.
+              The learning doesn't stop when camp does.
+            </p>
+            <br/>
+            <a href="#register" class="btn btn--primary" style="margin-top:8px;">Grab a spot →</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════════════
+       ROADMAP
+       ══════════════════════════════════════ -->
+  <section class="section section--alt" id="roadmap" aria-label="Future camps roadmap">
+    <div class="container">
+      <div class="roadmap__intro reveal">
+        <span class="tag">The Pathway</span>
+        <h2>This is just base camp</h2>
+        <p>Camp 1 is the beginning of a much bigger programme. Each new offering builds on the last — past campers are always first to know.</p>
+      </div>
+      <div class="roadmap">
+        <div class="roadmap-step reveal">
+          <div class="roadmap-step__bubble">1</div>
+          <div class="roadmap-step__current">Now — July 2026</div>
+          <div class="roadmap-step__title">micro:bit Block Coding</div>
+          <p class="roadmap-step__desc">Robots, sensors, games. The foundation camp that starts it all.</p>
+        </div>
+        <div class="roadmap-step roadmap-step--upcoming reveal reveal-delay-1">
+          <div class="roadmap-step__bubble">2</div>
+          <div class="roadmap-step__title">micro:bit Python</div>
+          <p class="roadmap-step__desc">Text-based coding for Camp 1 graduates — same hardware, next level of thinking.</p>
+        </div>
+        <div class="roadmap-step roadmap-step--upcoming reveal reveal-delay-2">
+          <div class="roadmap-step__bubble">3</div>
+          <div class="roadmap-step__title">Web Development</div>
+          <p class="roadmap-step__desc">HTML, CSS and JavaScript. Build a real website from scratch.</p>
+        </div>
+        <div class="roadmap-step roadmap-step--upcoming reveal reveal-delay-3">
+          <div class="roadmap-step__bubble">4</div>
+          <div class="roadmap-step__title">Game Development</div>
+          <p class="roadmap-step__desc">Pygame or Godot — design, build and play your own game.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════════════
+       LOCATION
+       ══════════════════════════════════════ -->
+  <section class="section" id="location" aria-label="Location information">
+    <div class="container">
+      <div class="location__grid">
+        <div class="reveal">
+          <span class="tag">Where We Are</span>
+          <h2>South of the river. Finally.</h2>
+          <p>
+            We're starting in the Kwinana and Rockingham areas, with plans to expand south as the programme grows.
+            No more driving to Joondalup or Mount Lawley for a decent coding camp.
+          </p>
+          <p>
+            Venues are being confirmed with local libraries and schools right now — register your interest
+            and we'll notify you the moment a venue and date are locked in.
+          </p>
+          <div class="location__suburbs" role="list" aria-label="Suburbs we serve">
+            <span class="suburb-tag" role="listitem">Kwinana</span>
+            <span class="suburb-tag" role="listitem">Rockingham</span>
+            <span class="suburb-tag" role="listitem">Baldivis</span>
+            <span class="suburb-tag" role="listitem">Safety Bay</span>
+            <span class="suburb-tag" role="listitem">Waikiki</span>
+            <span class="suburb-tag" role="listitem">Mandurah</span>
+            <span class="suburb-tag" role="listitem">Fremantle</span>
+            <span class="suburb-tag" role="listitem">Cockburn</span>
+          </div>
+        </div>
+        <div class="location__map reveal reveal-delay-1" aria-label="Map placeholder">
+          <div class="location__map-placeholder">
+            <svg width="80" height="80" viewBox="0 0 80 80" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+              <circle cx="40" cy="36" r="18" fill="none" stroke="#1D9E75" stroke-width="3"/>
+              <circle cx="40" cy="36" r="6" fill="#EF9F27"/>
+              <path d="M40,54 L40,72" stroke="#1D9E75" stroke-width="3" stroke-linecap="round"/>
+              <line x1="24" y1="72" x2="56" y2="72" stroke="#D3D1C7" stroke-width="2" stroke-linecap="round"/>
+            </svg>
+            <p>Rockingham &amp; Kwinana, Perth WA<br/>
+              <strong style="color:#085041;">Venue to be confirmed — register to be first notified.</strong>
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════════════
+       REGISTER
+       ══════════════════════════════════════ -->
+  <section class="section register" id="register" aria-label="Register interest">
+    <div class="container">
+      <div class="register__inner">
+        <span class="tag">Early Interest</span>
+        <h2>Be the first to know</h2>
+        <p>
+          Spots are capped at 10 per cohort. Register your interest now and you'll hear about
+          venue confirmation, dates and pricing before anyone else.
+        </p>
+        <form class="register__form" novalidate aria-label="Register interest form">
+          <div class="register__row">
+            <input class="register__input" type="text" name="name" placeholder="Parent / guardian name" autocomplete="name" required/>
+            <input class="register__input" type="email" name="email" placeholder="Email address" autocomplete="email" required/>
+          </div>
+          <input class="register__input" type="text" name="child" placeholder="Child's name and year group (e.g. Mia, Year 6)" required/>
+          <input class="register__input" type="text" name="suburb" placeholder="Your suburb"/>
+          <button type="submit" class="btn btn--primary" style="width:100%;justify-content:center;border-radius:100px;">
+            Reserve my spot →
+          </button>
+        </form>
+        <p class="register__note">No payment required now. We'll be in touch when dates and venue are confirmed.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════════════
+       FOOTER
+       ══════════════════════════════════════ -->
+  <footer class="footer" role="contentinfo">
+    <div class="container">
+      <div class="footer__grid">
+        <div class="footer__brand">
+          <div class="footer__logo">
+            <img src="assets/images/BaseCampCodeLogo.png" alt="Base Camp Code logo"/>
+            <div>
+              <div class="footer__logo-text">Base Camp Code</div>
+              <div class="footer__logo-sub">South of the River · Perth WA</div>
+            </div>
+          </div>
+          <p>
+            Hands-on technology education for young people in the Rockingham, Kwinana and greater
+            south-of-the-river Perth corridor. Teacher-led. Small cohorts. Real projects.
+          </p>
+        </div>
+        <div class="footer__col">
+          <h4>Programme</h4>
+          <ul>
+            <li><a href="#programme">3-Day Camp</a></li>
+            <li><a href="#included">What's Included</a></li>
+            <li><a href="#roadmap">Future Camps</a></li>
+          </ul>
+        </div>
+        <div class="footer__col">
+          <h4>About</h4>
+          <ul>
+            <li><a href="#about">Our Story</a></li>
+            <li><a href="#about">Mission &amp; Vision</a></li>
+            <li><a href="#about">Our Values</a></li>
+          </ul>
+        </div>
+        <div class="footer__col">
+          <h4>Get Involved</h4>
+          <ul>
+            <li><a href="#register">Register Interest</a></li>
+            <li><a href="#location">Location</a></li>
+            <li><a href="mailto:hello@basecampcode.com.au">Contact Us</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <p class="footer__copy">© 2026 Base Camp Code · Perth, Western Australia · ABN pending</p>
+        <p class="footer__tagline">Start at base camp. Code to the summit.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="scripts/main.js"></script>
+</body>
+</html>
