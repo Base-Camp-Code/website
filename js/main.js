@@ -80,20 +80,6 @@ document.addEventListener('DOMContentLoaded', () => {
 
   counters.forEach(el => counterObserver.observe(el));
 
-  /* ── Register form ── */
-  const form = document.querySelector('.register__form');
-  form?.addEventListener('submit', e => {
-    e.preventDefault();
-    const btn = form.querySelector('button[type="submit"]');
-    const name  = form.querySelector('[name="name"]').value.trim();
-    const email = form.querySelector('[name="email"]').value.trim();
-    if (!name || !email) return;
-    btn.textContent = '✓ You\'re on the list!';
-    btn.style.background = '#1D9E75';
-    btn.disabled = true;
-    form.querySelectorAll('input').forEach(i => i.disabled = true);
-  });
-
   /* ── Roadmap step hover highlight ── */
   document.querySelectorAll('.roadmap-step').forEach(step => {
     step.addEventListener('mouseenter', () => {
